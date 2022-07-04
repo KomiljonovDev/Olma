@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/login.css">
+   
+</head>
+<body>
+    
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="login.php?do=signup" class="form" id="form1" method="POST">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" name="fullname" placeholder="Full name" class="input" />
+                <input type="text" name="phone" placeholder="Phone number" class="input" />
+                <input type="text" name="login" placeholder="Login" class="input" />
+                <input type="login" name="mail" placeholder="Email" class="input" />
+                <input type="password" name="pass" placeholder="Password" class="input" />
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+    
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="login.php?do=login" class="form" id="form2" method="POST">
+                <h2 class="form__title">Sign In</h2>
+                <input type="login" name="login" placeholder="Email or login" class="input" />
+                <input type="password" name="pass" placeholder="Password" class="input" />
+                <label for="checkbox">Eslab qolinsin</label>
+                <input type="checkbox" id="checkbox" name="remember"/>
+                <a href="#" class="link">Forgot your password?</a>
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="../" class="btn btn-primary" style="text-decoration: none;">Bosh sahifa</a>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/*CABINET CABINET*/
+
+nav li .active {
+	color: grey !important; 
+}
+
+.cabinet {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	min-height: 100%;
+}
+
+
+.cabinet__left {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 10px;
+	height: 80vh;
+}
+
+
+.user__logo {
+	width: 130px;
+	margin: auto;
+	padding: 20px 0;
+}
+
+
+
+.user__datas {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 30px;
+}
+
+
+.user__data {
+	width: 100%;
+	margin: 13px 0;
+	font-size: 18px;
+}
+
+.user__data span:first-child {
+	font-weight: bold;
+}
+
+.cabinet__right {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 30px;
+	min-height: 90.3vh;
+	border-left: 1px solid #000;
+}
+
+.my_ads {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.my__ads__title {
+	font-size:40px;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.my_ads_item {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+	height: 150px;
+	position: relative;
+	/*border: 1px solid #000 !important;*/
+}
+
+
+.my_ads_item_delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: red !important;
+	width: 33px;
+	height: 33px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 115px;
+	border: 2px solid red;
+	transition: 0.6s;
+}
+
+.my_ads_item_delete a {
+	color: red !important;
+}
+
+.my_ads_item_delete a:hover {
+	color: white !important;
+}
+
+.my_ads_item_delete:hover {
+	background: red;
+	color: white !important;
+}
+
+.my_ads_item_img {
+	max-width: 530px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.my_ads_item img {
+	width: 230px;
+}
+
+.my_ads_item_right {
+	padding: 0 10px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 500px;
+}
+
+
+
+.my_ads_item_title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.my_ads_item_des {
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: gray;
+	width: 100%;
+}
+
+
+.my_ads_item_price {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+
+	.my__ads__title {
+		font-size: 34px;
+	}
+
+	.cabinet {
+		flex-wrap: wrap !important;
+	}
+
+
+	.cabinet__left {
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	.my_ads_item_img {
+		width: 100%;
+	}
+
+	.my_ads_item_img img {
+		width: 250px;
+		/*width: 100%;*/
+	}
+
+	.my_ads_item {
+		flex-direction: column;	
+		width: 300px;
+		margin: auto;
+		margin-top: 30px;
+		height: auto;
+		border-radius: 6px;
+		padding: 10px;
+	}
+
+
+	.my_ads_item_right {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.cabinet__right {
+		border: none !important;
+		border-top: 1px solid #000 !important;
+		margin-top: 200px;
+		width: 100%;
+	}
+
+
+
+	.my_ads_item_delete {
+		/*bottom: 0 !important;*/
+		top: 88%;
+		position: absolute;
+		right: 5%;
+		bottom: 0;
+	}
+}
+

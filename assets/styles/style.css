@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7f6f6 !important;
+}
+
+/* CARDS INFO START */
+
+.vendor, .location{
+    background: #fff;
+    padding: 10px 20px;
+}
+.vendor .btnDiv button:nth-child(1){
+    padding: 6px 13px;
+}
+.vendor .btnDiv button:nth-last-child(1){
+    padding: 6px 47px;
+}
+.cardComment{
+    background: #fff;
+    padding: 20px 35px !important;
+}
+
+@media (max-width: 680px){
+    .cardComment i{
+        font-size: 13px;
+    }
+    .cardComment h4{
+        font-size: 22px;
+    }
+    .cardComment h5{
+        font-size: 20px;
+    }
+    .cardComment p{
+        font-size: 14px;
+    }
+}
+/* CARDS INFO END */
